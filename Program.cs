@@ -1,1 +1,1 @@
-Console.WriteLine("Hi");
+Character player-new Character();

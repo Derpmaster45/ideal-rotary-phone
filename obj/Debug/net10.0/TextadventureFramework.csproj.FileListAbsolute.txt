@@ -1,0 +1,14 @@
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.GeneratedMSBuildEditorConfig.editorconfig
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.AssemblyInfoInputs.cache
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.AssemblyInfo.cs
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.csproj.CoreCompileInputs.cache
+/home/jay/Documents/Projects/C#/TextadventureFramework/bin/Debug/net10.0/TextadventureFramework
+/home/jay/Documents/Projects/C#/TextadventureFramework/bin/Debug/net10.0/TextadventureFramework.deps.json
+/home/jay/Documents/Projects/C#/TextadventureFramework/bin/Debug/net10.0/TextadventureFramework.runtimeconfig.json
+/home/jay/Documents/Projects/C#/TextadventureFramework/bin/Debug/net10.0/TextadventureFramework.dll
+/home/jay/Documents/Projects/C#/TextadventureFramework/bin/Debug/net10.0/TextadventureFramework.pdb
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.dll
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/refint/TextadventureFramework.dll
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.pdb
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/TextadventureFramework.genruntimeconfig.cache
+/home/jay/Documents/Projects/C#/TextadventureFramework/obj/Debug/net10.0/ref/TextadventureFramework.dll
