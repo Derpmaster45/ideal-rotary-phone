@@ -1,0 +1,7 @@
+namespace TextAdventureFramework
+{
+class BattleSystem
+    {
+    
+    }
+}

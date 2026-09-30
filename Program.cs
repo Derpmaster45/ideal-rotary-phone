@@ -1,1 +1,5 @@
-Character player-new Character();
+do 
+{
+
+}
+while(true);

@@ -1,3 +1,6 @@
+namespace TextadventureFramework{
+    
+
 class Character
 {
     // player information feel free to change default values to match your level scalying 
@@ -60,5 +63,6 @@ class Character
                 Console.ForegroundColor=ConsoleColor.Red;
                 break;
         }
+    }
     }
 }
