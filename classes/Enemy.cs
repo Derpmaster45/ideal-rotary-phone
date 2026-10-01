@@ -23,8 +23,8 @@ class Enemy : Character
     }
     public double enemybasedefense
     {
-        get=>enemybasedefense;
-        set=> enemybasedefense=value;
+        get=>EnemyBaseDefense;
+        set=>EnemyBaseDefense=value;
     }
     public int expvalue
     {
@@ -36,6 +36,22 @@ class Enemy : Character
         get=>EnemyLevel;
         set=>EnemyLevel=value;
         
+    }
+    public Enemy CreateEnemy(string name, double health,double defense, int expvalue, int level)
+    {
+        Enemy echaracter= new Enemy();
+        try{
+        echaracter.enemyname=name;
+        echaracter.enemyhealth=health;
+        echaracter.enemybasedefense=defense;
+        echaracter.expvalue=expvalue;
+        echaracter.enemylevel=level;
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+        return echaracter;
     }
 }
 }
