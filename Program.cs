@@ -4,7 +4,8 @@ namespace TextadventureFramework
     {
         static void Main(string[] args)
         {
-            
+         
+           Game.Run();
         }
     }
 }

@@ -1,4 +1,7 @@
-class Weapon
+namespace TextadventureFramework
 {
-    
+    class Weapon
+    {
+        
+    }
 }
