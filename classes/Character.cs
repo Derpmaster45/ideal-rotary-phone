@@ -19,6 +19,7 @@ class Character
     private double ExpToNextLevel=250;
     private string PlayerClass="";
     private string PlayerTextColor="";
+    // create a variable for the list
     
     // error message variable 
     string message="";
@@ -89,13 +90,34 @@ class Character
                      * class. 
                     */
                     case"1":
+                    player.playerhealth=100;
+                    player.playerdefensebase=25;
+                    player.playerexp=0;
+                    player.exptonextlevel=250;
+                    player.playerclass="tbd1";
+                    player.playerlevel=1;
                     break;
+
                     case"2":                    
                     case"tbd2":
+                    player.playerhealth=150;
+                    player.playerdefensebase=25;
+                    player.playerexp=0;
+                    player.exptonextlevel=250;
+                    player.playerclass="tbd2";
+                    player.playerlevel=1;
                     break;
+
                     case"3":
                     case"tbd3":
+                    player.playerhealth=100;
+                    player.playerdefensebase=75;
+                    player.playerexp=0;
+                    player.exptonextlevel=250;
+                    player.playerclass="tbd3";
+                    player.playerlevel=1;
                     break;
+
                 default:
                     message="Please select from the 3 listed options /n1) tbd \n2)tbd\n3)tbd";
                     DisplayErrorMessage(message);
