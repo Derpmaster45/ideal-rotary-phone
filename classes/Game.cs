@@ -45,13 +45,14 @@
                 //game code
                 Console.WriteLine("YOURGAMENAME HERE\n 1) New Game\n 2) Exit\n");
                  Enemy test =new Enemy();
+                 Character player= new Character();
                 string mainMenuOption=Console.ReadLine();
                 switch(mainMenuOption.ToLower())
                 {
                     case "1":
                     case"new game":
                         Console.WriteLine("New game started");
-                       
+                        player.CreateCharacter();
                         test.CreateEnemy("Zombie",100,25,25,1);
                         break;
                     case"2":
