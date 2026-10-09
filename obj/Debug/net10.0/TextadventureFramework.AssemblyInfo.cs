@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextadventureFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5604f67f51b6eff504d72b05964890933a92e1c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd744e5c0f462f9803b30bad4e80a495a117af5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextadventureFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextadventureFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

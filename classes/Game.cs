@@ -31,6 +31,7 @@
                                 Environment.Exit(0);
                                 break;
                                 case"n":
+                                Run();
                                 break;
                             default:
                                 DisplayErrorMessage(message);
