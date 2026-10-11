@@ -1,6 +1,6 @@
 namespace TextadventureFramework{
     
-
+[Serializable]
 class Character
 {
     // display error message
@@ -127,5 +127,6 @@ class Character
            }
             return player;
         }
+        
     }
 }
