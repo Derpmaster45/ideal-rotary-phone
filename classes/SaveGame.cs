@@ -1,6 +1,7 @@
 namespace TextadventureFramework
 {
 	//using Character;
+	using System.Text.Json;
 	class SaveGame
 	{
 		public static void SaveCharacter(Character playertosave)
@@ -13,8 +14,12 @@ namespace TextadventureFramework
 			saveslot.playerexp=playertosave.playerexp;
 			saveslot.exptonextlevel=playertosave.exptonextlevel;
 			saveslot.playerclass=playertosave.playerclass;
-			saveslot.playertextcolor=playertosave.playertextcolor;
-			return saveslot;
+			//saveslot.playertextcolor=playertosave.playertextcolor;
+			
+			// write to file
+			string saveName="GameName.JSON";
+			 string jsonObjectString=JsonSerializer.Serialize(playertosave);
+			 File.WriteAllText(saveName,jsonObjectString);
 		}
 	}
 }
