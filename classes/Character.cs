@@ -19,11 +19,18 @@ class Character
     private double ExpToNextLevel=250;
     private string PlayerClass="";
     private string PlayerTextColor="";
+    private double PlayerCurrentHealth=100;
+    private double PlayerStrength=25;
     // create a variable for the list
     
     // error message variable 
     string message="";
     // getters and setters
+    public double playercurrenthealth
+    {
+		get=>PlayerCurrentHealth;
+		set=>PlayerCurrentHealth=value;
+	}
     public string playername
     {
         get=>PlayerName;
@@ -60,6 +67,11 @@ class Character
         get=> PlayerClass;
         set=>PlayerClass=value;
     }
+    public double playerstrength
+    {
+		get=>PlayerStrength;
+		set=>PlayerStrength=value;
+	}
     
     void setTextColor(string textcolor)
     {

@@ -7,8 +7,15 @@ class Enemy : Character
     private double EnemyBaseDefense=25;
     private int ExpValue=50; 
     private int EnemyLevel=1;
+    private double EnemyCurrentHealth=100;
+    private double EnemyStrength=25;
     
     // getters and setters
+    public double enemycurrenthealth
+    {
+		get=>EnemyCurrentHealth;
+		set=>EnemyCurrentHealth=value;
+	}
     public string enemyname
     {
         get=> EnemyName;
@@ -37,7 +44,12 @@ class Enemy : Character
         set=>EnemyLevel=value;
         
     }
-    public Enemy CreateEnemy(string name, double health,double defense, int expvalue, int level)
+    public double enemystrength
+    {
+		get=>EnemyStrength;
+		set=>EnemyStrength=value;
+	}
+    public Enemy CreateEnemy(string name, double health,double defense, int expvalue, int level,double strength)
     {
         Enemy echaracter= new Enemy();
         try{
@@ -46,6 +58,7 @@ class Enemy : Character
         echaracter.enemybasedefense=defense;
         echaracter.expvalue=expvalue;
         echaracter.enemylevel=level;
+        echaracter.enemystrength=strength;
         }
         catch(Exception ex)
         {
@@ -53,5 +66,6 @@ class Enemy : Character
         }
         return echaracter;
     }
+    
 }
 }

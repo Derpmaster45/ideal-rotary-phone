@@ -53,7 +53,7 @@
                     case"new game":
                         Console.WriteLine("New game started");
                         player.CreateCharacter();
-                        test.CreateEnemy("Zombie",100,25,25,1);
+                        test.CreateEnemy("Zombie",100,25,25,1,25);
                         break;
                     case"2":
                     case"exit":
