@@ -4,12 +4,18 @@ namespace TextadventureFramework
 {
 class BattleSystem
     {
-		public double DoDamageToPlayer(Character target, Enemy attacker)
+		public static double DoDamageToPlayer(Character target, Enemy attacker)
 		{
 			double damagedealt=target.playerdefensebase/attacker.enemystrength;
+			Console.WriteLine($"You take {damagedealt} ponts of damage\n");
 			return damagedealt;
 		}
-			
+			public static double AttackEnemy(Character player, Enemy target)
+			{
+				double damagedealttotarget=player.playerstrength/target.enemybasedefense;
+				Console.WriteLine($"You have dealt {damagedealttotarget} points of damage");
+				return damagedealttotarget;
+			}
 			static void ShowErrorMessage(string message)
 		{
 			Console.ForegroundColor=ConsoleColor.Red;
@@ -33,10 +39,11 @@ class BattleSystem
 						case "1":
 						case "attack":
 						// do damage function goes here.
-						
+						AttackEnemy(player,target);
 						break;
 						case"2":
 						case "defend":
+						DoDamageToPlayer(player,target);
 						break;
 						default:
 						ShowErrorMessage("Please choose from the options listed \n 1) attack \n 2)defend");
