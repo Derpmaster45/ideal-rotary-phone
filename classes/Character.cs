@@ -21,11 +21,17 @@ class Character
     private string PlayerTextColor="";
     private double PlayerCurrentHealth=100;
     private double PlayerStrength=25;
+    private int PlayerGold=0;
     // create a variable for the list
     
     // error message variable 
     string message="";
     // getters and setters
+    public int playergold
+    {
+		get=>PlayerGold;
+		set=>PlayerGold=value;
+	}
     public double playercurrenthealth
     {
 		get=>PlayerCurrentHealth;

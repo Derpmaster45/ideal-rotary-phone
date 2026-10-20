@@ -7,7 +7,7 @@ namespace TextadventureFramework
 		public static void SaveCharacter(Character playertosave)
 		{
 			Character saveslot=new Character();
-			saveslot.playername=playertosave.playername;
+			saveslot.playername=playertosave.playername; 
 			saveslot.playerhealth=playertosave.playerhealth;
 			saveslot.playerlevel=playertosave.playerlevel;
 			saveslot.playerdefensebase=playertosave.playerdefensebase;
