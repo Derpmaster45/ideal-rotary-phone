@@ -10,7 +10,7 @@ class Character
         Console.WriteLine(message);
         Console.ForegroundColor=ConsoleColor.White;
     }
-    // player information feel free to change default values to match your level scalying 
+    // player information feel free to change default values to match your level scaling 
     private string PlayerName="";
     private double PlayerHealth=100;
     private int PlayerLevel=1;
@@ -91,6 +91,29 @@ class Character
                 case"red": 
                 Console.ForegroundColor=ConsoleColor.Red;
                 break;
+                case "dark blue":
+                case"db":
+                Console.ForegroundColor=ConsoleColor.DarkBlue;
+                break;
+                case"dark green":
+                case"dg":
+                Console.ForegroundColor=ConsoleColor.DarkGreen;
+                break;
+                case"dark cyan":
+                case"dc":
+                Console.ForegroundColor=ConsoleColor.DarkCyan;
+                break
+                case "dark red":
+                case"dr":
+                Console.ForegroundCOlor=ConsoleColor.DarkRed;
+                break;
+                case"":
+                default:
+                DisplayErrorMessage("Error setting to default color");
+                Console.ForegroundColor=ConsoleColor.Gray;
+                textcolor="";
+                break;
+                
         }
     }
         public Character CreateCharacter() 
