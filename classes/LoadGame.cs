@@ -1,0 +1,7 @@
+namespace TextadventureFramework
+{
+	class LoadGame
+	{
+		
+	}
+}
