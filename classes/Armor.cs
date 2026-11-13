@@ -5,7 +5,7 @@ namespace TextadventureFramework
         private string ArmorName{get;set;}
         private double ArmorPrice {get;set;}
         private double ArmorDefensePoints {get;set;}
-        
+        private static string[] ShopInventory{get; set;}=Array.Empty<string>();
         public static void ShowErrorMessage(string message)
         {
 			Console.ForegroundColor=ConsoleColor.Red;
@@ -24,6 +24,16 @@ namespace TextadventureFramework
 					case"1":
 					case"buy":
 					// loop through shops inventory
+					for(int shopInventoryCounter=0; shopInventoryCounter<Armor.ShopInventory.Length; shopInventoryCounter++)
+					{
+						for(int shopPriceCounter=0; shopPriceCounter<Armor.ShopInventory.Length; shopPriceCounter++)
+						{
+							Console.WriteLine(ShopInventory[shopInventoryCounter][shopPriceCounter]);
+						}
+						
+						//Console.Writeline()
+					
+					}
 					break;
 					case"2":
 					case"sell":
