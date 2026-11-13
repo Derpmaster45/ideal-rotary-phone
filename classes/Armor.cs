@@ -30,14 +30,33 @@ namespace TextadventureFramework
 						{
 							Console.WriteLine(ShopInventory[shopInventoryCounter][shopPriceCounter]);
 						}
-						
-						//Console.Writeline()
+						string buyMenuOption="";
+						do
+						{
+							Console.WriteLine("What would you like to by?");
+							buyMenuOption=Console.ReadLine();
+							switch(buyMenuOption.ToLower())
+							{
+								default:
+								//ShowErrorMessage("Please choose from the above options);
+								break;
+							}
+						}
+						while(buyMenuOption=="");
 					
 					}
 					break;
 					case"2":
 					case"sell":
 					// loop through player inventory
+					Console.WriteLine("What would you like to sell to the shop");
+					for(int playerInventoryCounter=0; playerInventoryCounter<player.PlayerInventory.Length; playerInventoryCounter++)
+					{
+						for(int PiCostCounter=0; PiCostCounter<player.PlayerInventory.Length; PiCostCounter++) // Pi = PlayerInventory
+						{
+							Console.WriteLine(player.PlayerInventory[playerInventoryCounter][PiCostCounter]);
+						}
+					}
 					break;
 					case "3":
 					case"exit":

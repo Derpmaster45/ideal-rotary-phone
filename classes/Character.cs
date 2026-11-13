@@ -22,6 +22,7 @@ class Character
     private double PlayerCurrentHealth=100;
     private double PlayerStrength=25;
     private int PlayerGold=0;
+    public string[] PlayerInventory{get; set;}=Array.Empty<string>();
     // create a variable for the list
     
     // error message variable 
@@ -162,6 +163,8 @@ class Character
             {
                     /* note defaults for these cases can be and should be changed. use this case to set defaults for each 
                      * class. 
+                     * Devs will have to add in a template for the inventory]
+                     
                     */
                     case"1":
                     player.playerhealth=100;
