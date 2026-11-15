@@ -39,6 +39,10 @@ namespace TextadventureFramework
                      case"sell":
                      Console.WriteLine("What would you like to sell/n");
                      // loop through player inventory along with selling prices.
+                     for(int pInventoryCounter=0; pInventoryCounter<playercharacter.PlayerInventory.Length;pInventoryCounter++)
+                        {
+							Console.WriteLine(playercharacter.PlayerInventory[pInventoryCounter]);
+						}
                          break;
                      default:
                     // string message="Please choose ffrom the above options/n1) buy /2 sell/n";
