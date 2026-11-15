@@ -4,10 +4,7 @@ namespace TextadventureFramework
     {
         private string WeaponName{get;set;}
         private double WeaponDamage{get;set;}
-        private float WeaponCost{get;set;}
-        private float WeaponSellPrice{get;set;}
-         // string message="";
-        
+        public static string [] WeaponDetails{get;set;}=Array.Empty<string>();
         
         static void ShowErrorMessage(string message)
         {
@@ -17,7 +14,7 @@ namespace TextadventureFramework
         }
         // weapon shop menu
 
-        public static void WeaponShop(Character playercharacter)
+        public static void WeaponShop(Weapon WeaponsDealer, Character playercharacter)
         {
             string weaponShopChoice="";
              while(weaponShopChoice=="")
@@ -30,6 +27,13 @@ namespace TextadventureFramework
                          case"buy":
                             Console.WriteLine("What would you like to buy?");
                             // loop through the shop inventory. 10-9-26 will be added later.
+                            for (int WeaponName=0; WeaponName<WeaponDetails.Length; WeaponName++)
+                            {
+								for(int WeaponDescription=0;  WeaponDescription<WeaponDetails.Length; WeaponDescription++)
+								{
+								
+								}
+							}
                          break;
                      case "2":
                      case"sell":
@@ -38,7 +42,7 @@ namespace TextadventureFramework
                          break;
                      default:
                     // string message="Please choose ffrom the above options/n1) buy /2 sell/n";
-                     ShowErrorMessage("Please choose from the above options/n1) buy /2 sell/n");
+                     ShowErrorMessage("Please choose from the above options/n1) buy /n2) sell/n");
                      weaponShopChoice="";
                         break;
 

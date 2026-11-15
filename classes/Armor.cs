@@ -5,7 +5,7 @@ namespace TextadventureFramework
         private string ArmorName{get;set;}
         private double ArmorPrice {get;set;}
         private double ArmorDefensePoints {get;set;}
-        private static string[] ShopInventory{get; set;}=Array.Empty<string>();
+        private static string[]ShopInventory{get; set;}=Array.Empty<string>();
         public static void ShowErrorMessage(string message)
         {
 			Console.ForegroundColor=ConsoleColor.Red;
@@ -26,10 +26,6 @@ namespace TextadventureFramework
 					// loop through shops inventory
 					for(int shopInventoryCounter=0; shopInventoryCounter<Armor.ShopInventory.Length; shopInventoryCounter++)
 					{
-						for(int shopPriceCounter=0; shopPriceCounter<Armor.ShopInventory.Length; shopPriceCounter++)
-						{
-							Console.WriteLine(ShopInventory[shopInventoryCounter][shopPriceCounter]);
-						}
 						string buyMenuOption="";
 						do
 						{
@@ -52,10 +48,7 @@ namespace TextadventureFramework
 					Console.WriteLine("What would you like to sell to the shop");
 					for(int playerInventoryCounter=0; playerInventoryCounter<player.PlayerInventory.Length; playerInventoryCounter++)
 					{
-						for(int PiCostCounter=0; PiCostCounter<player.PlayerInventory.Length; PiCostCounter++) // Pi = PlayerInventory
-						{
-							Console.WriteLine(player.PlayerInventory[playerInventoryCounter][PiCostCounter]);
-						}
+						Console.WriteLine(player.PlayerInventory[playerInventoryCounter]);
 					}
 					break;
 					case "3":
