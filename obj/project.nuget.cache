@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ortx5W0s8Hw=",
+  "dgSpecHash": "dyRtb72MNlw=",
   "success": true,
-  "projectFilePath": "/home/jay/Documents/Project/CSharp/textadeventureframework/ideal-rotary-phone-Indev/TextadventureFramework.csproj",
+  "projectFilePath": "/home/jay/Documents/projects/ideal-rotary-phone-Indev/TextadventureFramework.csproj",
   "expectedPackageFiles": [
-    "/home/jay/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+    "/root/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

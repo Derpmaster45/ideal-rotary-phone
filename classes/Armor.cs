@@ -5,7 +5,7 @@ namespace TextadventureFramework
         private string ArmorName{get;set;}
         private double ArmorPrice {get;set;}
         private double ArmorDefensePoints {get;set;}
-        
+        private static string[]ShopInventory{get; set;}=Array.Empty<string>();
         public static void ShowErrorMessage(string message)
         {
 			Console.ForegroundColor=ConsoleColor.Red;
@@ -17,23 +17,48 @@ namespace TextadventureFramework
 			string shopChoice="";
 			while (shopChoice=="")
 			{
-				Console.WriteLine("Hello, how can i help you today?/n1)Buy/n2)sell/n3)back/n");
+				Console.WriteLine("Hello, how can i help you today?/n1)Buy/n2)sell/n3)exit/n");
 				shopChoice=Console.ReadLine();
 				switch(shopChoice.ToLower())
 				{
 					case"1":
 					case"buy":
 					// loop through shops inventory
+					for(int shopInventoryCounter=0; shopInventoryCounter<Armor.ShopInventory.Length; shopInventoryCounter++)
+					{
+						string buyMenuOption="";
+						do
+						{
+							Console.WriteLine("What would you like to by?");
+							buyMenuOption=Console.ReadLine();
+							switch(buyMenuOption.ToLower())
+							{
+								default:
+								ShowErrorMessage("Please choose from the above options");
+								break;
+							}
+						}
+						while(buyMenuOption=="");
+					
+					}
 					break;
 					case"2":
 					case"sell":
 					// loop through player inventory
+					Console.WriteLine("What would you like to sell to the shop");
+					for(int playerInventoryCounter=0; playerInventoryCounter<player.PlayerInventory.Length; playerInventoryCounter++)
+					{
+						Console.WriteLine(player.PlayerInventory[playerInventoryCounter]);
+					}
+					Console.WriteLine("What would you like to sell?\n");
+					string sellChoice=Console.ReadLine();
 					break;
 					case "3":
 					case"exit":
 					break; 
 					default:
 					ShowErrorMessage("Please select from the above options \n1) buy /n 2)sell/n3)exit shop");
+					shopChoice="";
 					break;
 				}
 			}

@@ -20,7 +20,7 @@ class BattleSystem
 		{
 			Console.ForegroundColor=ConsoleColor.Red;
 			Console.WriteLine(message);
-			Console.ForegroundColor=ConsoleColor.White;
+			Console.ForegroundColor=ConsoleColor.Gray;
 		}
 		public static void Start (Character player, Enemy target)
 		{
