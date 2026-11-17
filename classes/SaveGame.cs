@@ -4,7 +4,7 @@ namespace TextadventureFramework
 	using System.Text.Json;
 	class SaveGame
 	{
-		public static void SaveCharacter(Character playertosave)
+		public void SaveCharacter(Character playertosave)
 		{
 			Character saveslot=new Character();
 			saveslot.playername=playertosave.playername; 

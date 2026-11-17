@@ -22,11 +22,11 @@ class BattleSystem
 			Console.WriteLine(message);
 			Console.ForegroundColor=ConsoleColor.Gray;
 		}
-		public static void Start (Character player, Enemy target)
+		public void Start (Character player, Enemy target)
 		{
 			Console.WriteLine($"{target.enemyname} has appeared!");
 			// default player goes first
-			while (player.playercurrenthealth<=0||target.enemycurrenthealth<=0)
+			while (player.playercurrenthealt>=0||target.enemycurrenthealth>=0)
 			{
 				
 				string battleoption="";
@@ -52,6 +52,7 @@ class BattleSystem
 						
 					
 					}
+					AttackEnemy(player,target);
 				}
 			}
 		}
